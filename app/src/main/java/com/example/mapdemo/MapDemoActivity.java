@@ -49,7 +49,7 @@ import permissions.dispatcher.NeedsPermission;
 import permissions.dispatcher.RuntimePermissions;
 
 @RuntimePermissions
-public class MapDemoActivity extends AppCompatActivity implements
+public class git remote addMapDemoActivity extends AppCompatActivity implements
 		GoogleApiClient.ConnectionCallbacks,
 		GoogleApiClient.OnConnectionFailedListener,
 		LocationListener {
@@ -59,7 +59,7 @@ public class MapDemoActivity extends AppCompatActivity implements
 	private GoogleApiClient mGoogleApiClient;
 	private LocationRequest mLocationRequest;
 	private long UPDATE_INTERVAL = 60000;  /* 60 secs */
-	private long FASTEST_INTERVAL = 5000; /* 5 secs */
+	private long FASTEST_IGITNTERVAL = 5000; /* 5 secs */
 
 	/*
 	 * Define a request code to send to Google Play services This code is
@@ -250,7 +250,8 @@ public class MapDemoActivity extends AppCompatActivity implements
 		restaurants.add(new Restaurant(1, "Ellinwn Geuseis", "Makenomaxwn 35", 41.083073, 23.551652));
 		restaurants.add(new Restaurant(5, "Ntomata", "Anapausews 7", 41.098007, 23.554818));
 
-		nearestRestaurant = restaurants.get( findNearestRestaurant(restaurants, currentLocation) );
+		nearestRestau
+				rant = restaurants.get( findNearestRestaurant(restaurants, currentLocation) );
 		String strNearest = nearestRestaurant.getName() + ", " + nearestRestaurant.getAddress();
 
 		TextView displayNearestRes = (TextView) findViewById(R.id.textView4);
